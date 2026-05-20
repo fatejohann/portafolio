@@ -88,6 +88,15 @@
 .mock-bout-text h3 { font-size: 10px; color: #4a3728; font-weight: 600; margin-bottom: 10px; line-height: 1.4; }
 .mock-bout-btn { background: #4a3728; color: #faf5f0; font-size: 7px; padding: 5px 10px; letter-spacing: 1px; text-transform: uppercase; display: inline-block; }
 
+/* Demo: Portafolio Angular */
+.mock-portfolio { height: 100%; background: #f5e0d0; display: flex; flex-direction: column; }
+.mock-portfolio-nav { background: #d42b2b; padding: 6px 10px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #111; }
+.mock-portfolio-nav span { font-size: 12px; font-weight: 900; color: #111; letter-spacing: 2px; font-family: monospace; }
+.mock-portfolio-hero { flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 10px 12px; gap: 6px; }
+.mock-portfolio-badge { font-size: 7px; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; background: #111; color: #d42b2b; padding: 3px 8px; width: fit-content; }
+.mock-portfolio-title { font-size: 18px; font-weight: 900; color: #111; letter-spacing: 2px; line-height: 1; text-transform: uppercase; font-family: 'Arial Black', sans-serif; }
+.mock-portfolio-title span { background: #d42b2b; color: #111; padding: 0 4px; display: inline-block; }
+
 /* Project card info */
 .project-tags {
   display: flex;
