@@ -1,0 +1,80 @@
+/* ════════════════════════════════════════
+   responsive.css — Media queries (mobile-first)
+   Cargado al final para ganar en cascada
+   ════════════════════════════════════════ */
+
+/* ── Tablet y móvil ancho ── */
+@media (max-width: 960px) {
+  /* Nav */
+  .nav-links     { display: none; }
+  .nav-hamburger { display: flex; }
+  .section-tag   { display: none; }
+
+  /* Hero */
+  .hero { grid-template-columns: 1fr; min-height: auto; }
+  .hero-content { padding: 3.5rem 2.5rem; border-right: none; border-bottom: var(--border-thick); }
+  .hero-visual { padding: 3rem 2.5rem; flex-direction: row; flex-wrap: wrap; }
+  .stat-block  { width: calc(50% - 8px); margin-bottom: 0; }
+  .stat-block:nth-child(3) { width: 100%; }
+
+  /* Proyectos */
+  .projects-grid { grid-template-columns: 1fr; }
+  .project-card  { border-right: none; border-bottom: var(--border-thick); }
+  .project-card:last-child { border-bottom: none; }
+
+  /* Proyecto profesional */
+  .project-pro { grid-template-columns: 1fr; }
+  .pro-content { border-right: none; border-bottom: 4px solid rgba(255,255,255,0.12); }
+
+  /* Stack técnico */
+  .stack-grid { grid-template-columns: 1fr; }
+  .stack-col  { border-right: none; border-bottom: var(--border-thick); }
+  .stack-col:last-child { border-bottom: none; }
+
+  /* Proceso */
+  .proceso-grid { grid-template-columns: 1fr 1fr; }
+  .proceso-step:nth-child(2) { border-right: none; }
+  .proceso-step:nth-child(3) { border-top: var(--border-thick); }
+
+  /* Servicios */
+  .servicios-grid { grid-template-columns: 1fr; }
+  .servicio-card  { border-right: none; border-bottom: var(--border-thick); }
+  .servicio-card:last-child { border-bottom: none; }
+
+  /* Contacto */
+  .contacto-grid  { grid-template-columns: 1fr; }
+  .contacto-left  { border-right: none; border-bottom: var(--border-thick); padding: 3.5rem 2.5rem; }
+  .contacto-right { padding: 3.5rem 2.5rem; }
+
+  /* Footer */
+  footer { flex-direction: column; gap: 8px; padding: 1.5rem 2rem; text-align: center; }
+}
+
+/* ── Móvil estrecho ── */
+@media (max-width: 600px) {
+  nav { padding: 0 1.2rem; }
+
+  .hero-content { padding: 3rem 1.5rem; }
+  .hero-title   { font-size: 3.8rem; }
+  .hero-visual  { flex-direction: column; padding: 2.5rem 1.5rem; }
+  .stat-block   { width: 100%; }
+  .hero-stack-tag { font-size: 9px; padding: 4px 9px; }
+
+  .section-num   { padding: 0.9rem 1.2rem; font-size: 0.8rem; }
+  .section-title { font-size: 1.6rem; padding: 0.7rem 1.2rem; }
+
+  .proceso-grid { grid-template-columns: 1fr; }
+  .proceso-step { border-right: none; border-bottom: var(--border-thick); }
+  .proceso-step:last-child { border-bottom: none; }
+
+  .project-card  { padding: 1.5rem; }
+  .servicio-card { padding: 2rem 1.5rem; }
+
+  .contacto-left  { padding: 2.5rem 1.5rem; }
+  .contacto-right { padding: 2.5rem 1.5rem; }
+  .contacto-headline { font-size: 3rem; }
+
+  .servicios-extra { grid-template-columns: 1fr; }
+  .servicio-extra-item { border-right: none; border-bottom: var(--border-thick); }
+  .servicio-extra-item:last-child { border-bottom: none; }
+}
