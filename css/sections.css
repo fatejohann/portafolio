@@ -139,6 +139,53 @@
   padding-top: 10px;
 }
 
+/* ── Tarjeta proyecto personal (ancho completo, fondo acento) ── */
+.project-personal {
+  grid-column: 1 / -1;
+  background: var(--accent);
+  color: var(--black);
+  display: grid;
+  grid-template-columns: 0.55fr 1fr;
+  border-right: none;
+  border-top: var(--border-thick);
+}
+.project-personal .project-tag        { border-color: rgba(17,17,17,0.35); }
+.project-personal .project-tag.accent { background: var(--black); color: var(--accent); border-color: var(--black); }
+.project-personal .project-name       { color: var(--black); }
+.project-personal .project-desc       { color: rgba(17,17,17,0.78); }
+
+.personal-mockup {
+  border: var(--border-thick);
+  box-shadow: var(--shadow);
+  margin: 2rem;
+  background: var(--white);
+  overflow: hidden;
+  align-self: center;
+}
+.personal-mockup .mockup-screen { height: 220px; }
+
+.personal-info {
+  padding: 2.5rem 2rem 2.5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0;
+}
+
+.personal-links {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+.project-personal .btn-primary {
+  background: var(--black);
+  color: var(--accent);
+  border-color: var(--black);
+  box-shadow: 5px 5px 0 rgba(0,0,0,0.25);
+}
+.project-personal .btn-primary:hover { box-shadow: 2px 2px 0 rgba(0,0,0,0.2); }
+
 /* ── Tarjeta proyecto profesional ── */
 .project-pro {
   grid-column: 1 / -1;

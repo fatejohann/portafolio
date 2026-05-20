@@ -22,6 +22,11 @@
   .project-card  { border-right: none; border-bottom: var(--border-thick); }
   .project-card:last-child { border-bottom: none; }
 
+  /* Proyecto personal (Angular) */
+  .project-personal { grid-template-columns: 1fr; }
+  .personal-mockup  { margin: 1.5rem 1.5rem 0; }
+  .personal-info    { padding: 1.5rem; }
+
   /* Proyecto profesional */
   .project-pro { grid-template-columns: 1fr; }
   .pro-content { border-right: none; border-bottom: 4px solid rgba(255,255,255,0.12); }
