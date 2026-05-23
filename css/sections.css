@@ -529,3 +529,18 @@
   border-top-color: rgba(255,255,255,0.15);
   color: rgba(255,255,255,0.4);
 }
+
+/* Demo: DermaSkin Clínica */
+.mock-derma { height: 100%; background: oklch(0.97 0.012 75); display: flex; flex-direction: column; }
+.mock-derma-nav { background: oklch(0.99 0.004 90); border-bottom: 1px solid oklch(0.87 0.015 72); padding: 6px 10px; display: flex; justify-content: space-between; align-items: center; }
+.mock-derma-nav span { font-size: 10px; font-weight: 400; color: oklch(0.20 0.025 45); font-family: Georgia, serif; }
+.mock-derma-nav em { color: oklch(0.44 0.10 36); font-style: italic; }
+.mock-derma-hero { flex: 1; background: oklch(0.93 0.018 72); display: flex; flex-direction: column; justify-content: center; padding: 10px 12px; gap: 5px; }
+.mock-derma-hero h3 { font-size: 11px; font-weight: 700; color: oklch(0.20 0.025 45); font-family: Georgia, serif; line-height: 1.3; }
+.mock-derma-hero em { color: oklch(0.44 0.10 36); font-style: italic; }
+.mock-derma-hero p  { font-size: 8px; color: oklch(0.50 0.022 50); letter-spacing: .06em; text-transform: uppercase; }
+.mock-derma-cta { display: inline-block; background: oklch(0.44 0.10 36); color: oklch(0.99 0.004 90); font-size: 8px; font-weight: 700; padding: 4px 10px; border-radius: 3px; width: fit-content; }
+.mock-derma-stats { display: flex; justify-content: space-around; padding: 7px 10px; background: oklch(0.99 0.004 90); border-top: 1px solid oklch(0.87 0.015 72); }
+.mock-derma-stats div { display: flex; flex-direction: column; align-items: center; gap: 1px; }
+.mock-derma-stats strong { font-size: 10px; font-weight: 700; color: oklch(0.44 0.10 36); }
+.mock-derma-stats span  { font-size: 7px; color: oklch(0.50 0.022 50); }
