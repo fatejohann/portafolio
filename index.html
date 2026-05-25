@@ -8,7 +8,7 @@
   <meta name="robots" content="index, follow">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Bebas+Neue&family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/tokens.css">
   <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/sections.css">
@@ -31,7 +31,10 @@
 <nav role="navigation" aria-label="Navegación principal">
   <div class="nav-logo">
     <div class="nav-logo-box" aria-hidden="true">JL</div>
-    <span class="nav-logo-text">Johan López</span>
+    <div class="nav-logo-info">
+      <div class="nav-logo-name">Johan López</div>
+      <div class="nav-logo-sub">dev · sv</div>
+    </div>
   </div>
   <ul class="nav-links" role="list">
     <li><a href="#sobre-mi">Sobre mí</a></li>
@@ -41,6 +44,8 @@
     <li><a href="#servicios">Servicios</a></li>
     <li><a href="#contacto">Contacto</a></li>
   </ul>
+  <a href="https://wa.me/50361673417?text=Hola%20Johan%2C%20vi%20tu%20portafolio%20y%20me%20interesa%20hablar%20sobre%20mi%20proyecto.%20%C2%BFTienes%20disponibilidad%3F"
+     class="nav-cta" target="_blank" rel="noopener noreferrer">Hablemos →</a>
   <button class="nav-hamburger" aria-label="Abrir menú" aria-expanded="false" onclick="toggleMenu(this)">
     <span></span><span></span><span></span>
   </button>
@@ -57,150 +62,280 @@
 
 <main id="main">
 
-<!-- HERO -->
+<!-- ════════════════════════════════ HERO ════════════════════════════════ -->
 <section class="hero" id="sobre-mi" aria-label="Presentación">
+  <div class="hero-meta hero-meta-left" aria-hidden="true">INDEX/00 — HERO</div>
+  <div class="hero-meta hero-meta-right" aria-hidden="true">SV/2026 · LAT 13.7°N</div>
+
+  <!-- Left column -->
   <div class="hero-content">
     <div class="hero-badge">
       <span class="hero-badge-dot" aria-hidden="true"></span>
       Disponible para proyectos
     </div>
+
     <h1 class="hero-title">
-      Webs<br>que<br><span class="line-accent">venden.</span>
+      Webs<br>
+      <em class="hero-title-serif">que</em><br>
+      <span class="hero-title-accent">
+        <em class="hero-title-serif">venden.</em>
+        <span class="hero-title-accent-bar" aria-hidden="true"></span>
+      </span>
     </h1>
+
     <p class="hero-sub">
-      Soy Johan López, desarrollador de software independiente en El Salvador. Construyo sitios 100% a medida — sin WordPress, sin plantillas — con código limpio, hosting gratuito y optimizados para aparecer en Google desde el primer día.
+      Soy <strong>Johan López</strong>, desarrollador de software independiente en El Salvador. Construyo sitios 100% a medida — sin WordPress, sin plantillas — con código limpio, hosting gratuito y SEO desde el primer día.
     </p>
+
     <div class="hero-actions">
-      <a href="https://wa.me/50361673417?text=Hola%20Johan%2C%20vi%20tu%20portafolio%20y%20me%20interesa%20hablar%20sobre%20mi%20proyecto.%20%C2%BFTienes%20disponibilidad%3F" class="btn-primary" target="_blank" rel="noopener noreferrer">Hablemos →</a>
+      <a href="https://wa.me/50361673417?text=Hola%20Johan%2C%20vi%20tu%20portafolio%20y%20me%20interesa%20hablar%20sobre%20mi%20proyecto.%20%C2%BFTienes%20disponibilidad%3F"
+         class="btn-primary" target="_blank" rel="noopener noreferrer">Hablemos →</a>
       <a href="#proyectos" class="btn-secondary">Ver proyectos</a>
     </div>
+
     <div class="hero-stack" aria-label="Tecnologías que utilizo">
-      <span class="hero-stack-tag">HTML5</span>
-      <span class="hero-stack-tag">CSS3</span>
-      <span class="hero-stack-tag">JavaScript</span>
-      <span class="hero-stack-tag">GitHub</span>
-      <span class="hero-stack-tag">Netlify</span>
-      <span class="hero-stack-tag">SEO</span>
-      <span class="hero-stack-tag">Google Analytics</span>
+      <span class="mono-tag">HTML5</span>
+      <span class="mono-tag">CSS3</span>
+      <span class="mono-tag">JavaScript</span>
+      <span class="mono-tag">Angular</span>
+      <span class="mono-tag">TypeScript</span>
+      <span class="mono-tag">GitHub</span>
+      <span class="mono-tag">Netlify</span>
+      <span class="mono-tag">SEO</span>
     </div>
   </div>
+
+  <!-- Right column: stats -->
   <div class="hero-visual" aria-label="Propuesta de valor">
-    <div class="stat-block reveal">
-      <div class="stat-label">Entrega garantizada</div>
-      <div class="stat-value">5–14</div>
-      <div class="stat-sub">días hábiles promedio</div>
+    <div class="hero-stat-label">Lo que entrego</div>
+
+    <!-- Stat 1: Entrega (featured, big) -->
+    <div class="stat-block-featured">
+      <div class="stat-block-header">
+        <span class="stat-block-id">01 · Entrega típica</span>
+        <span class="stat-block-unit">días hábiles</span>
+      </div>
+      <div class="stat-block-value">
+        <span class="stat-block-num">5–14</span>
+        <em class="stat-block-serif">días</em>
+      </div>
+      <div class="stat-block-sub">Del kickoff al deploy en producción</div>
     </div>
-    <div class="stat-block reveal">
-      <div class="stat-label">Compatibilidad</div>
-      <div class="stat-value">100%</div>
-      <div class="stat-sub">responsive en todos los dispositivos</div>
+
+    <!-- Stats 2 + 3: side by side -->
+    <div class="stat-block-row">
+      <div class="stat-block-sm">
+        <div class="stat-block-id">02 · Responsive</div>
+        <div class="stat-block-value">
+          <span class="stat-block-num stat-block-num-sm">100</span>
+          <em class="stat-block-serif stat-block-serif-sm">%</em>
+        </div>
+        <div class="stat-block-sub">todos los dispositivos</div>
+      </div>
+      <div class="stat-block-dark">
+        <div class="stat-block-id stat-block-id-dark">03 · SEO</div>
+        <em class="stat-block-serif-dark">incluido</em>
+        <div class="stat-block-sub stat-block-sub-dark">en cada paquete</div>
+      </div>
     </div>
-    <div class="stat-block reveal">
-      <div class="stat-label">Posicionamiento</div>
-      <div class="stat-value">SEO</div>
-      <div class="stat-sub">incluido en todos los paquetes</div>
-    </div>
+
+    <!-- Stamps -->
+    <div class="stamp stamp-accent stamp-top-right" aria-hidden="true">100%<br>Código<br>Limpio</div>
+    <div class="stamp stamp-ink stamp-bottom-left stamp-sm" aria-hidden="true">Sin WordPress</div>
   </div>
 </section>
 
-<!-- PROYECTOS -->
-<section id="proyectos" aria-label="Proyectos de demostración">
-  <div class="section-header">
-    <span class="section-num">01</span>
-    <h2 class="section-title">Proyectos</h2>
-    <span class="section-tag">3 demos · 2 personales · 1 profesional</span>
+<!-- ════════════════════════════════ MARQUEE ════════════════════════════════ -->
+<div class="marquee-strip" role="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span class="marquee-item">Disponible para proyectos</span>
+    <span class="marquee-star">★</span>
+    <span class="marquee-item">Angular · TypeScript</span>
+    <span class="marquee-star">★</span>
+    <span class="marquee-item">SV / 2026</span>
+    <span class="marquee-star">★</span>
+    <span class="marquee-item">Código 100% a medida</span>
+    <span class="marquee-star">★</span>
+    <span class="marquee-item">Sin WordPress</span>
+    <span class="marquee-star">★</span>
+    <span class="marquee-item">Hosting gratuito</span>
+    <span class="marquee-star">★</span>
+    <span class="marquee-item">SEO incluido</span>
+    <span class="marquee-star">★</span>
+    <span class="marquee-item">Entrega 5–14 días</span>
+    <span class="marquee-star">★</span>
+    <!-- duplicate for seamless loop -->
+    <span class="marquee-item">Disponible para proyectos</span>
+    <span class="marquee-star">★</span>
+    <span class="marquee-item">Angular · TypeScript</span>
+    <span class="marquee-star">★</span>
+    <span class="marquee-item">SV / 2026</span>
+    <span class="marquee-star">★</span>
+    <span class="marquee-item">Código 100% a medida</span>
+    <span class="marquee-star">★</span>
+    <span class="marquee-item">Sin WordPress</span>
+    <span class="marquee-star">★</span>
+    <span class="marquee-item">Hosting gratuito</span>
+    <span class="marquee-star">★</span>
+    <span class="marquee-item">SEO incluido</span>
+    <span class="marquee-star">★</span>
+    <span class="marquee-item">Entrega 5–14 días</span>
+    <span class="marquee-star">★</span>
   </div>
-  <div class="projects-grid">
+</div>
 
-    <!-- Restaurante -->
-    <article class="project-card reveal">
-      <div class="project-mockup" aria-hidden="true">
-        <div class="mockup-bar">
-          <div class="mockup-dot"></div><div class="mockup-dot"></div><div class="mockup-dot"></div>
-          <div class="mockup-url">elsabornuestro.com</div>
+<!-- ════════════════════════════════ PROYECTOS ════════════════════════════════ -->
+<section id="proyectos" aria-label="Proyectos">
+  <div class="section-header">
+    <span class="section-num">01 /</span>
+    <h2 class="section-title">Proyectos <em class="section-title-italic">seleccionados</em></h2>
+    <span class="section-tag">6 ITEMS · 2024–2026</span>
+  </div>
+
+  <!-- Featured: DermaSkin -->
+  <article class="project-featured reveal">
+    <div class="project-featured-mockup" aria-hidden="true">
+      <div class="mockup-bar">
+        <div class="mockup-dot"></div><div class="mockup-dot"></div><div class="mockup-dot"></div>
+        <div class="mockup-url">democlinicaderma.netlify.app</div>
+      </div>
+      <div class="mockup-screen-lg">
+        <div class="mock-derma">
+          <div class="mock-derma-nav">
+            <span>Derma<em>Skin</em></span>
+            <div style="background:#703020;color:#f5ede0;font-size:11px;font-weight:700;padding:5px 12px;border-radius:2px">Agendar</div>
+          </div>
+          <div class="mock-derma-hero">
+            <h3>Tu piel <em>merece</em> el mejor cuidado</h3>
+            <p>Dermatología · Estética · Cirugía</p>
+            <span class="mock-derma-cta">Agendar cita</span>
+          </div>
+          <div class="mock-derma-stats">
+            <div><strong>+8k</strong><span>pacientes</span></div>
+            <div><strong>15+</strong><span>años</span></div>
+            <div><strong>98%</strong><span>satisfacción</span></div>
+          </div>
         </div>
-        <div class="mockup-screen">
-          <div class="mock-rest">
-            <div class="mock-rest-nav">
-              <span>El Sabor Nuestro</span>
-              <div style="display:flex;gap:6px">
-                <div style="width:22px;height:5px;background:rgba(255,255,255,0.15);border-radius:1px"></div>
-                <div style="width:22px;height:5px;background:rgba(255,255,255,0.15);border-radius:1px"></div>
-                <div style="width:22px;height:5px;background:rgba(255,255,255,0.15);border-radius:1px"></div>
+      </div>
+    </div>
+    <div class="project-featured-info">
+      <div class="project-featured-meta">
+        <span>★ FEATURED · CLÍNICA · SALUD</span>
+        <span>2025</span>
+      </div>
+      <div class="project-featured-title-row">
+        <h3 class="project-featured-name">DermaSkin Clínica</h3>
+        <span class="project-status-live">● LIVE</span>
+      </div>
+      <p class="project-featured-desc">Landing page para clínica dermatológica en San Salvador. Paleta terracota, secciones de servicios, testimonios y formulario de citas. Desplegado en Netlify.</p>
+      <div class="project-featured-tags">
+        <span class="mono-tag">HTML/CSS</span>
+        <span class="mono-tag">JavaScript</span>
+        <span class="mono-tag">Netlify</span>
+      </div>
+      <div class="project-featured-url">
+        <span class="accent-arrow">→</span>
+        <a href="https://democlinicaderma.netlify.app/" target="_blank" rel="noopener noreferrer">democlinicaderma.netlify.app</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- Compact project list -->
+  <div class="projects-list">
+
+    <!-- 02: Portafolio Angular -->
+    <div class="project-row reveal">
+      <div class="project-row-num">02</div>
+      <div class="project-row-img" aria-hidden="true">
+        <div class="mock-mini-wrap">
+          <div class="mockup-bar mock-mini-bar">
+            <div class="mockup-dot"></div><div class="mockup-dot"></div><div class="mockup-dot"></div>
+          </div>
+          <div class="mock-portfolio mock-mini-screen">
+            <div class="mock-portfolio-nav">
+              <span>JL</span>
+              <div style="display:flex;gap:8px;align-items:center">
+                <div style="width:18px;height:4px;background:rgba(212,43,43,0.3);border-radius:1px"></div>
+                <div style="width:18px;height:4px;background:rgba(212,43,43,0.3);border-radius:1px"></div>
               </div>
             </div>
-            <div class="mock-rest-body">
-              <h3>Sabores que enamoran</h3>
-              <p>Cocina salvadoreña tradicional desde 1992</p>
-              <div class="mock-rest-cta">Ver menú</div>
+            <div class="mock-portfolio-hero">
+              <div class="mock-portfolio-badge">● Disponible</div>
+              <div class="mock-portfolio-title">WEBS<br>QUE<br><span>VENDEN.</span></div>
             </div>
           </div>
         </div>
       </div>
-      <div class="project-tags">
-        <span class="project-tag accent">Restaurante</span>
-        <span class="project-tag">HTML/CSS</span>
-        <span class="project-tag">JavaScript</span>
+      <div class="project-row-info">
+        <h4 class="project-row-name">Portafolio Angular v3</h4>
+        <div class="project-row-category">Proyecto personal</div>
       </div>
-      <h3 class="project-name">El Sabor Nuestro</h3>
-      <p class="project-desc">Landing page con menú interactivo, galería de platos y sistema de reservas por WhatsApp para restaurante salvadoreño.</p>
-      <div class="project-demo">★ Proyecto de demostración</div>
-    </article>
+      <div class="project-row-desc">Portafolio reconstruido en Angular 18 con modo oscuro, typewriter con RxJS y filtro reactivo de proyectos.</div>
+      <div class="project-row-tags">
+        <span class="mono-tag">Angular 18</span>
+        <span class="mono-tag">TypeScript</span>
+      </div>
+      <div class="project-row-status">
+        <span class="project-status-live">LIVE</span>
+        <a href="https://johanlopez.netlify.app/" target="_blank" rel="noopener noreferrer" class="accent-arrow" aria-label="Ver Portafolio Angular">→</a>
+      </div>
+    </div>
 
-    <!-- DermaSkin — demo en vivo -->
-    <article class="project-card reveal">
-      <div class="project-mockup" aria-hidden="true">
-        <div class="mockup-bar">
-          <div class="mockup-dot"></div><div class="mockup-dot"></div><div class="mockup-dot"></div>
-          <div class="mockup-url">democlinicaderma.netlify.app</div>
-        </div>
-        <div class="mockup-screen">
-          <div class="mock-derma">
-            <div class="mock-derma-nav">
-              <span>Derma<em>Skin</em></span>
-              <div style="background:#703020;color:#f5ede0;font-size:7px;font-weight:700;padding:3px 8px;border-radius:2px">Agendar</div>
-            </div>
-            <div class="mock-derma-hero">
-              <h3>Tu piel <em>merece</em> el mejor cuidado</h3>
-              <p>Dermatología · Estética · Cirugía</p>
-              <span class="mock-derma-cta">Agendar cita</span>
-            </div>
-            <div class="mock-derma-stats">
-              <div><strong>+8k</strong><span>pacientes</span></div>
-              <div><strong>15+</strong><span>años</span></div>
-              <div><strong>98%</strong><span>satisfacción</span></div>
-            </div>
+    <!-- 03: Inventario App -->
+    <div class="project-row reveal">
+      <div class="project-row-num">03</div>
+      <div class="project-row-img"
+           style="background-image: linear-gradient(135deg, rgba(31,74,58,0.8), rgba(31,74,58,0.65)), url('https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80'); background-size: cover; background-position: center;"
+           aria-hidden="true"></div>
+      <div class="project-row-info">
+        <h4 class="project-row-name">Inventario App</h4>
+        <div class="project-row-category">PWA · Sistema</div>
+      </div>
+      <div class="project-row-desc">Sistema de gestión de inventario y pedidos para tiendas de jugos. PWA offline-first con sincronización automática.</div>
+      <div class="project-row-tags">
+        <span class="mono-tag">Angular 20</span>
+        <span class="mono-tag">Node.js</span>
+      </div>
+      <div class="project-row-status">
+        <span class="project-status-wip">WIP</span>
+        <span class="accent-arrow">→</span>
+      </div>
+    </div>
+
+    <!-- 04: Generador de Diagramas -->
+    <div class="project-row reveal">
+      <div class="project-row-num">04</div>
+      <div class="project-row-img"
+           style="background-image: linear-gradient(135deg, rgba(42,42,74,0.8), rgba(42,42,74,0.65)), url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80'); background-size: cover; background-position: center;"
+           aria-hidden="true"></div>
+      <div class="project-row-info">
+        <h4 class="project-row-name">Generador de Diagramas</h4>
+        <div class="project-row-category">Herramienta · Profesional</div>
+      </div>
+      <div class="project-row-desc">Herramienta web para construir diagramas de grafos y árboles de decisión. Exporta JSON para chatbots.</div>
+      <div class="project-row-tags">
+        <span class="mono-tag">Angular</span>
+        <span class="mono-tag">TypeScript</span>
+      </div>
+      <div class="project-row-status">
+        <span class="project-status-nda">NDA</span>
+        <span class="accent-arrow">→</span>
+      </div>
+    </div>
+
+    <!-- 05: Boutique Lumina -->
+    <div class="project-row reveal">
+      <div class="project-row-num">05</div>
+      <div class="project-row-img" aria-hidden="true">
+        <div class="mock-mini-wrap">
+          <div class="mockup-bar mock-mini-bar">
+            <div class="mockup-dot"></div><div class="mockup-dot"></div><div class="mockup-dot"></div>
           </div>
-        </div>
-      </div>
-      <div class="project-tags">
-        <span class="project-tag accent">Clínica</span>
-        <span class="project-tag">HTML/CSS</span>
-        <span class="project-tag">JavaScript</span>
-        <span class="project-tag">Netlify</span>
-      </div>
-      <h3 class="project-name">DermaSkin Clínica</h3>
-      <p class="project-desc">Landing page para clínica dermatológica en San Salvador. Diseño médico-premium con paleta terracota, secciones de servicios, testimonios y formulario de citas. Desplegado en Netlify.</p>
-      <div class="project-demo">
-        <a href="https://democlinicaderma.netlify.app/" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:underline;text-underline-offset:3px">Ver en vivo → democlinicaderma.netlify.app</a>
-      </div>
-    </article>
-
-    <!-- Boutique -->
-    <article class="project-card reveal">
-      <div class="project-mockup" aria-hidden="true">
-        <div class="mockup-bar">
-          <div class="mockup-dot"></div><div class="mockup-dot"></div><div class="mockup-dot"></div>
-          <div class="mockup-url">boutiquelumina.com</div>
-        </div>
-        <div class="mockup-screen">
-          <div class="mock-bout">
+          <div class="mock-bout mock-mini-screen">
             <div class="mock-bout-nav">
               <span>Lumina</span>
-              <div style="display:flex;gap:10px">
-                <span style="font-size:7px;color:#7a5c48">Colección</span>
-                <span style="font-size:7px;color:#7a5c48">Nosotros</span>
-                <span style="font-size:7px;color:#7a5c48">Contacto</span>
+              <div class="mock-bout-nav-links">
+                <span>Colección</span><span>Contacto</span>
               </div>
             </div>
             <div class="mock-bout-body">
@@ -214,152 +349,73 @@
           </div>
         </div>
       </div>
-      <div class="project-tags">
-        <span class="project-tag accent">E-commerce</span>
-        <span class="project-tag">HTML/CSS</span>
-        <span class="project-tag">JavaScript</span>
+      <div class="project-row-info">
+        <h4 class="project-row-name">Boutique Lumina</h4>
+        <div class="project-row-category">E-commerce · Moda</div>
       </div>
-      <h3 class="project-name">Boutique Lumina</h3>
-      <p class="project-desc">Tienda online para boutique de moda con catálogo de productos, carrito de compras y pasarela de pago integrada.</p>
-      <div class="project-demo">★ Proyecto de demostración</div>
-    </article>
+      <div class="project-row-desc">Tienda online para boutique de moda con catálogo de productos, carrito y pasarela de pago integrada.</div>
+      <div class="project-row-tags">
+        <span class="mono-tag">HTML/CSS</span>
+        <span class="mono-tag">JavaScript</span>
+      </div>
+      <div class="project-row-status">
+        <span class="project-status-demo">DEMO</span>
+        <span class="accent-arrow">→</span>
+      </div>
+    </div>
 
-    <!-- Portafolio Angular — tarjeta ancho completo -->
-    <article class="project-card project-personal reveal">
-      <div class="personal-mockup" aria-hidden="true">
-        <div class="mockup-bar">
-          <div class="mockup-dot"></div><div class="mockup-dot"></div><div class="mockup-dot"></div>
-          <div class="mockup-url">johanlopez.netlify.app</div>
-        </div>
-        <div class="mockup-screen">
-          <div class="mock-portfolio">
-            <div class="mock-portfolio-nav">
-              <span>JL</span>
-              <div style="display:flex;gap:8px;align-items:center">
-                <div style="width:18px;height:4px;background:rgba(212,43,43,0.25);border-radius:1px"></div>
-                <div style="width:18px;height:4px;background:rgba(212,43,43,0.25);border-radius:1px"></div>
-                <div style="width:14px;height:14px;background:#111;border:1.5px solid #d42b2b;border-radius:1px;display:flex;align-items:center;justify-content:center">
-                  <div style="width:7px;height:7px;border-radius:50%;background:#d42b2b"></div>
-                </div>
+    <!-- 06: El Sabor Nuestro -->
+    <div class="project-row reveal">
+      <div class="project-row-num">06</div>
+      <div class="project-row-img" aria-hidden="true">
+        <div class="mock-mini-wrap">
+          <div class="mockup-bar mock-mini-bar">
+            <div class="mockup-dot"></div><div class="mockup-dot"></div><div class="mockup-dot"></div>
+          </div>
+          <div class="mock-rest mock-mini-screen">
+            <div class="mock-rest-nav">
+              <span>El Sabor Nuestro</span>
+              <div style="display:flex;gap:6px">
+                <div style="width:22px;height:5px;background:rgba(255,255,255,0.15);border-radius:1px"></div>
+                <div style="width:22px;height:5px;background:rgba(255,255,255,0.15);border-radius:1px"></div>
               </div>
             </div>
-            <div class="mock-portfolio-hero">
-              <div class="mock-portfolio-badge">● Disponible</div>
-              <div class="mock-portfolio-title">WEBS<br>QUE<br><span>VENDEN.</span></div>
+            <div class="mock-rest-body">
+              <h3>Sabores que enamoran</h3>
+              <p>Cocina salvadoreña desde 1992</p>
+              <div class="mock-rest-cta">Ver menú</div>
             </div>
           </div>
         </div>
       </div>
-      <div class="personal-info">
-        <div class="project-tags">
-          <span class="project-tag accent">Proyecto personal</span>
-          <span class="project-tag">Angular 18</span>
-          <span class="project-tag">TypeScript</span>
-          <span class="project-tag">SCSS</span>
-          <span class="project-tag">RxJS</span>
-        </div>
-        <h3 class="project-name">Portafolio v3 Angular</h3>
-        <p class="project-desc">Versión mejorada de este mismo portafolio, reconstruida desde cero en Angular 18 con componentes standalone. Incluye modo oscuro con ThemeService y signals, efecto typewriter animado con RxJS, y filtro reactivo de proyectos con computed().</p>
-        <div class="personal-links">
-          <a href="https://johanlopez.netlify.app/" class="btn-primary" target="_blank" rel="noopener noreferrer">Ver en vivo →</a>
-        </div>
+      <div class="project-row-info">
+        <h4 class="project-row-name">El Sabor Nuestro</h4>
+        <div class="project-row-category">Restaurante</div>
       </div>
-    </article>
-
-    <!-- Inventario App -->
-    <article class="project-card project-pro reveal">
-      <div class="pro-content">
-        <div class="project-tags">
-          <span class="project-tag accent">Proyecto personal</span>
-          <span class="project-tag">Angular 20</span>
-          <span class="project-tag">Node.js</span>
-          <span class="project-tag">PostgreSQL</span>
-          <span class="project-tag">Docker</span>
-          <span class="project-tag">PWA</span>
-        </div>
-        <h3 class="project-name">Inventario App</h3>
-        <p class="project-desc">Sistema de gestión de inventario y pedidos para tiendas de jugos y smoothies. Funciona como PWA offline-first: registra pedidos y descuenta stock sin conexión, sincronizando automáticamente al reconectarse. Incluye gestión de recetas con precios dinámicos, cierre de turno con reconciliación de stock, reportes de negocio y autenticación por PIN con roles admin/empleado.</p>
-        <div class="project-demo">
-          <span class="deploy-badge">⏳ Deploy en progreso</span>
-        </div>
+      <div class="project-row-desc">Landing page con menú interactivo, galería de platos y sistema de reservas por WhatsApp.</div>
+      <div class="project-row-tags">
+        <span class="mono-tag">HTML/CSS</span>
+        <span class="mono-tag">JavaScript</span>
       </div>
-      <div class="pro-meta">
-        <div class="pro-confidential" style="color:#f59e0b">
-          <span style="animation: pulse 2s infinite; display:inline-block">⏳</span>
-          Deploy en progreso
-        </div>
-        <div>
-          <div class="pro-built-label">Frontend</div>
-          <div class="pro-built-tags">
-            <span class="pro-built-tag">Angular 20</span>
-            <span class="pro-built-tag">Signals</span>
-            <span class="pro-built-tag">PWA</span>
-            <span class="pro-built-tag">Dexie / IndexedDB</span>
-            <span class="pro-built-tag">Angular Material</span>
-          </div>
-        </div>
-        <div>
-          <div class="pro-built-label">Backend & Datos</div>
-          <div class="pro-built-tags">
-            <span class="pro-built-tag">Node.js</span>
-            <span class="pro-built-tag">Express 5</span>
-            <span class="pro-built-tag">PostgreSQL 16</span>
-            <span class="pro-built-tag">JWT</span>
-            <span class="pro-built-tag">Docker</span>
-          </div>
-        </div>
+      <div class="project-row-status">
+        <span class="project-status-demo">DEMO</span>
+        <span class="accent-arrow">→</span>
       </div>
-    </article>
-
-    <!-- Proyecto profesional confidencial -->
-    <article class="project-card project-pro reveal">
-      <div class="pro-content">
-        <div class="project-tags">
-          <span class="project-tag accent">Proyecto profesional</span>
-          <span class="project-tag">Angular</span>
-          <span class="project-tag">JavaScript</span>
-          <span class="project-tag">HTML/CSS</span>
-        </div>
-        <h3 class="project-name">Generador de Diagramas</h3>
-        <p class="project-desc">Herramienta web para construir diagramas de grafos y árboles de decisión de manera visual e interactiva. La estructura generada se exporta como JSON estructurado para alimentar motores de chatbot y flujos de conversación automatizados. Desarrollado en Angular para el cliente y en HTML/CSS/JS vanilla como versión alternativa.</p>
-        <div class="project-demo">Proyecto bajo acuerdo de confidencialidad · Sin demo público disponible</div>
-      </div>
-      <div class="pro-meta">
-        <div class="pro-confidential">
-          <span class="pro-conf-dot" aria-hidden="true">●</span>
-          Confidencial
-        </div>
-        <div>
-          <div class="pro-built-label">Construido con</div>
-          <div class="pro-built-tags">
-            <span class="pro-built-tag">Angular</span>
-            <span class="pro-built-tag">TypeScript</span>
-            <span class="pro-built-tag">JavaScript</span>
-            <span class="pro-built-tag">HTML/CSS</span>
-          </div>
-        </div>
-        <div>
-          <div class="pro-built-label">Contexto</div>
-          <div class="pro-built-tags">
-            <span class="pro-built-tag">Prácticas profesionales</span>
-          </div>
-        </div>
-      </div>
-    </article>
+    </div>
 
   </div>
 </section>
 
-<!-- STACK TÉCNICO -->
+<!-- ════════════════════════════════ STACK ════════════════════════════════ -->
 <section id="stack" aria-label="Stack técnico">
   <div class="section-header">
-    <span class="section-num">02</span>
-    <h2 class="section-title">Stack técnico</h2>
-    <span class="section-tag">Tecnologías que domino</span>
+    <span class="section-num">02 /</span>
+    <h2 class="section-title">Stack <em class="section-title-italic">técnico</em></h2>
+    <span class="section-tag">TECNOLOGÍAS QUE DOMINO</span>
   </div>
   <div class="stack-grid">
     <div class="stack-col reveal">
-      <div class="stack-col-label">Frontend</div>
+      <div class="stack-col-label">01 · Frontend</div>
       <div class="stack-tags">
         <span class="stack-tag stack-tag-highlight">Angular</span>
         <span class="stack-tag">HTML5</span>
@@ -369,126 +425,149 @@
       </div>
     </div>
     <div class="stack-col reveal">
-      <div class="stack-col-label">Backend &amp; Datos</div>
+      <div class="stack-col-label">02 · Backend &amp; Datos</div>
       <div class="stack-tags">
         <span class="stack-tag stack-tag-highlight">Firebase</span>
         <span class="stack-tag stack-tag-highlight">PostgreSQL</span>
         <span class="stack-tag">MySQL</span>
+        <span class="stack-tag">Node.js</span>
+        <span class="stack-tag">Express</span>
       </div>
     </div>
     <div class="stack-col reveal">
-      <div class="stack-col-label">Infraestructura</div>
+      <div class="stack-col-label">03 · Infraestructura</div>
       <div class="stack-tags">
         <span class="stack-tag">GitHub</span>
         <span class="stack-tag">Netlify</span>
         <span class="stack-tag">Cloudinary</span>
         <span class="stack-tag">Google Analytics</span>
+        <span class="stack-tag">Docker</span>
         <span class="stack-tag">Namecheap</span>
       </div>
     </div>
   </div>
 </section>
 
-<!-- PROCESO -->
+<!-- ════════════════════════════════ PROCESO ════════════════════════════════ -->
 <section id="proceso" class="section-dark" aria-label="Cómo trabajo">
-  <div class="section-header">
-    <span class="section-num">03</span>
-    <h2 class="section-title">Cómo trabajo</h2>
-    <span class="section-tag">4 pasos simples</span>
+  <div class="proceso-header">
+    <span class="proceso-num">03 /</span>
+    <h2 class="proceso-title">Cómo <em class="proceso-title-serif">trabajo</em></h2>
+    <span class="proceso-tag">4 PASOS SIMPLES · LÍNEA DE TIEMPO</span>
   </div>
-  <div class="proceso-grid">
-    <div class="proceso-step reveal">
-      <div class="paso-num" aria-hidden="true">01</div>
-      <h3 class="paso-title">Escucho tu idea</h3>
-      <p class="paso-desc">Conversamos por WhatsApp o videollamada. Me cuentas qué necesitas, a quién va dirigido y cuáles son tus metas de negocio.</p>
-    </div>
-    <div class="proceso-step reveal">
-      <div class="paso-num" aria-hidden="true">02</div>
-      <h3 class="paso-title">Diseño y propuesta</h3>
-      <p class="paso-desc">En 1–2 días te envío una propuesta visual. Ajustamos colores, textos y estructura hasta que quede exactamente como lo imaginas.</p>
-    </div>
-    <div class="proceso-step reveal">
-      <div class="paso-num" aria-hidden="true">03</div>
-      <h3 class="paso-title">Desarrollo</h3>
-      <p class="paso-desc">Construyo tu sitio con código limpio, rápido y optimizado para buscadores. Recibes actualizaciones de progreso en todo momento.</p>
-    </div>
-    <div class="proceso-step reveal">
-      <div class="paso-num" aria-hidden="true">04</div>
-      <h3 class="paso-title">Entrega y soporte</h3>
-      <p class="paso-desc">Publicamos tu sitio y te entrego el acceso completo. Soporte incluido por 30 días para cualquier ajuste que necesites.</p>
+
+  <div class="proceso-timeline">
+    <div class="proceso-line" aria-hidden="true"></div>
+    <div class="proceso-grid">
+
+      <div class="proceso-step reveal">
+        <div class="paso-circle" aria-hidden="true">01<span class="paso-arrow">→</span></div>
+        <div class="paso-step-label">Paso 01</div>
+        <h3 class="paso-title">Escucho tu idea</h3>
+        <p class="paso-desc">Conversamos por WhatsApp o videollamada. Me cuentas qué necesitas, a quién va dirigido y cuáles son tus metas de negocio.</p>
+      </div>
+
+      <div class="proceso-step reveal">
+        <div class="paso-circle" aria-hidden="true">02<span class="paso-arrow">→</span></div>
+        <div class="paso-step-label">Paso 02</div>
+        <h3 class="paso-title">Diseño y propuesta</h3>
+        <p class="paso-desc">En 1–2 días te envío una propuesta visual. Ajustamos colores, textos y estructura hasta que quede exactamente como lo imaginas.</p>
+      </div>
+
+      <div class="proceso-step reveal">
+        <div class="paso-circle" aria-hidden="true">03<span class="paso-arrow">→</span></div>
+        <div class="paso-step-label">Paso 03</div>
+        <h3 class="paso-title">Desarrollo</h3>
+        <p class="paso-desc">Construyo tu sitio con código limpio, rápido y optimizado para buscadores. Recibes actualizaciones de progreso en todo momento.</p>
+      </div>
+
+      <div class="proceso-step reveal">
+        <div class="paso-circle" aria-hidden="true">04</div>
+        <div class="paso-step-label">Paso 04</div>
+        <h3 class="paso-title">Entrega y soporte</h3>
+        <p class="paso-desc">Publicamos tu sitio y te entrego el acceso completo. Soporte incluido por 30 días para cualquier ajuste que necesites.</p>
+      </div>
+
     </div>
   </div>
 </section>
 
-<!-- SERVICIOS -->
+<!-- ════════════════════════════════ SERVICIOS ════════════════════════════════ -->
 <section id="servicios" aria-label="Servicios y precios">
   <div class="section-header">
-    <span class="section-num">04</span>
-    <h2 class="section-title">Servicios</h2>
-    <span class="section-tag">Precios en USD</span>
-  </div>
-  <div class="servicios-grid">
-
-    <div class="servicio-card reveal">
-      <div class="servicio-tier normal">Landing page</div>
-      <div class="servicio-name">Básico</div>
-      <div class="servicio-price">$300</div>
-      <div class="servicio-note">pago único · sin mensualidades</div>
-      <ul class="servicio-features" aria-label="Características del plan básico">
-        <li class="servicio-feature">Diseño 100% a medida (no plantillas)</li>
-        <li class="servicio-feature">Hasta 3 secciones</li>
-        <li class="servicio-feature">100% responsive (móvil, tablet, desktop)</li>
-        <li class="servicio-feature">Botón de WhatsApp integrado</li>
-        <li class="servicio-feature">SEO básico + Open Graph</li>
-        <li class="servicio-feature">Hosting gratuito con HTTPS (Netlify)</li>
-        <li class="servicio-feature">Entrega en 5–7 días</li>
-      </ul>
-      <a href="https://wa.me/50361673417?text=Hola%20Johan%2C%20me%20interesa%20el%20paquete%20Landing%20Page%20de%20%24300.%20%C2%BFPodemos%20hablar%3F" class="btn-secondary" target="_blank" rel="noopener noreferrer">Solicitar →</a>
-    </div>
-
-    <div class="servicio-card featured reveal" aria-label="Plan más popular">
-      <div class="servicio-tier popular">★ Más popular</div>
-      <div class="servicio-name">Empresarial</div>
-      <div class="servicio-price">$550</div>
-      <div class="servicio-note">50% al iniciar · 50% al entregar · sin mensualidades</div>
-      <ul class="servicio-features" aria-label="Características del plan empresarial">
-        <li class="servicio-feature">Todo lo del plan básico</li>
-        <li class="servicio-feature">Hasta 11 páginas completas</li>
-        <li class="servicio-feature">Galería con filtros y lightbox</li>
-        <li class="servicio-feature">Google Analytics + Open Graph</li>
-        <li class="servicio-feature">Redacción del contenido base</li>
-        <li class="servicio-feature">2 rondas de revisión incluidas</li>
-        <li class="servicio-feature">Soporte 30 días</li>
-      </ul>
-      <a href="https://wa.me/50361673417?text=Hola%20Johan%2C%20me%20interesa%20el%20paquete%20Empresarial%20de%20%24550.%20%C2%BFPodemos%20hablar%3F" class="btn-primary" target="_blank" rel="noopener noreferrer">Solicitar →</a>
-    </div>
-
-    <div class="servicio-card reveal">
-      <div class="servicio-tier normal">Tienda online</div>
-      <div class="servicio-name">E-commerce</div>
-      <div class="servicio-price">$950</div>
-      <div class="servicio-note">50% al iniciar · 50% al entregar · sin mensualidades</div>
-      <ul class="servicio-features" aria-label="Características del plan e-commerce">
-        <li class="servicio-feature">Todo lo del plan empresarial</li>
-        <li class="servicio-feature">Catálogo de productos filtrable</li>
-        <li class="servicio-feature">Carrito de compras (JS vanilla)</li>
-        <li class="servicio-feature">Integración de pasarela de pago</li>
-        <li class="servicio-feature">Panel de administración básico</li>
-        <li class="servicio-feature">Entrega en 10–14 días</li>
-        <li class="servicio-feature">Soporte 30 días</li>
-      </ul>
-      <a href="https://wa.me/50361673417?text=Hola%20Johan%2C%20me%20interesa%20el%20paquete%20E-commerce%20de%20%24950.%20%C2%BFPodemos%20hablar%3F" class="btn-secondary" target="_blank" rel="noopener noreferrer">Solicitar →</a>
-    </div>
-
+    <span class="section-num">04 /</span>
+    <h2 class="section-title">Servicios <em class="section-title-italic">&amp; precios</em></h2>
+    <span class="section-tag">USD · SIN MENSUALIDADES OCULTAS</span>
   </div>
 
-  <div class="servicios-extra" aria-label="Servicios adicionales opcionales">
+  <div class="servicios-wrap">
+    <div class="stamp stamp-accent stamp-services" aria-hidden="true">Pago<br>único<br>★</div>
+    <div class="servicios-grid">
+
+      <div class="servicio-card reveal">
+        <div class="servicio-tier">Landing page</div>
+        <div class="servicio-name">Básico</div>
+        <div class="servicio-price">$250</div>
+        <div class="servicio-note">pago único · sin mensualidades</div>
+        <ul class="servicio-features" aria-label="Características del plan básico">
+          <li>Diseño 100% a medida (no plantillas)</li>
+          <li>Hasta 3 secciones</li>
+          <li>100% responsive</li>
+          <li>Botón de WhatsApp integrado</li>
+          <li>SEO básico + Open Graph</li>
+          <li>Hosting gratuito con HTTPS</li>
+          <li>Entrega en 5–7 días</li>
+        </ul>
+        <a href="https://wa.me/50361673417?text=Hola%20Johan%2C%20me%20interesa%20el%20paquete%20Landing%20Page%20de%20%24250.%20%C2%BFPodemos%20hablar%3F"
+           class="btn-service" target="_blank" rel="noopener noreferrer">Solicitar →</a>
+      </div>
+
+      <div class="servicio-card servicio-featured reveal" aria-label="Plan más popular">
+        <div class="servicio-tier servicio-tier-featured">★ Más popular</div>
+        <div class="servicio-name">Empresarial</div>
+        <div class="servicio-price">$550</div>
+        <div class="servicio-note servicio-note-dark">50% al iniciar · 50% al entregar</div>
+        <ul class="servicio-features" aria-label="Características del plan empresarial">
+          <li>Todo lo del plan básico</li>
+          <li>Hasta 11 páginas completas</li>
+          <li>Galería con filtros y lightbox</li>
+          <li>Google Analytics + Open Graph</li>
+          <li>Redacción del contenido base</li>
+          <li>2 rondas de revisión incluidas</li>
+          <li>Soporte 30 días</li>
+        </ul>
+        <a href="https://wa.me/50361673417?text=Hola%20Johan%2C%20me%20interesa%20el%20paquete%20Empresarial%20de%20%24550.%20%C2%BFPodemos%20hablar%3F"
+           class="btn-service btn-service-featured" target="_blank" rel="noopener noreferrer">Solicitar →</a>
+      </div>
+
+      <div class="servicio-card reveal">
+        <div class="servicio-tier">Tienda online</div>
+        <div class="servicio-name">E-commerce</div>
+        <div class="servicio-price">$1,000</div>
+        <div class="servicio-note">50% al iniciar · 50% al entregar</div>
+        <ul class="servicio-features" aria-label="Características del plan e-commerce">
+          <li>Todo lo del plan empresarial</li>
+          <li>Catálogo de productos filtrable</li>
+          <li>Carrito de compras (JS vanilla)</li>
+          <li>Integración de pasarela de pago</li>
+          <li>Panel de administración básico</li>
+          <li>Entrega en 10–14 días</li>
+          <li>Soporte 30 días</li>
+        </ul>
+        <a href="https://wa.me/50361673417?text=Hola%20Johan%2C%20me%20interesa%20el%20paquete%20E-commerce%20de%20%241,000.%20%C2%BFPodemos%20hablar%3F"
+           class="btn-service" target="_blank" rel="noopener noreferrer">Solicitar →</a>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="servicios-extra">
     <div class="servicio-extra-item">
       <div class="servicio-extra-icon" aria-hidden="true">→</div>
       <div>
         <div class="servicio-extra-label">Opcional · anual</div>
         <div class="servicio-extra-name">Gestión de dominio</div>
-        <div class="servicio-extra-price">$20–25 / año — transferencia, renovación y administración total del dominio</div>
+        <div class="servicio-extra-price"><strong>$20–25 / año</strong> — transferencia, renovación y administración total.</div>
       </div>
     </div>
     <div class="servicio-extra-item">
@@ -496,7 +575,7 @@
       <div>
         <div class="servicio-extra-label">Opcional · mensual</div>
         <div class="servicio-extra-name">Plan de mantenimiento</div>
-        <div class="servicio-extra-price">$40 / mes — monitoreo, hasta 2 cambios de contenido, backup y soporte por WhatsApp</div>
+        <div class="servicio-extra-price"><strong>$40 / mes</strong> — monitoreo, hasta 2 cambios de contenido, backup y soporte por WhatsApp.</div>
       </div>
     </div>
     <div class="servicio-extra-item">
@@ -504,36 +583,42 @@
       <div>
         <div class="servicio-extra-label">Opcional · por proyecto</div>
         <div class="servicio-extra-name">Páginas adicionales</div>
-        <div class="servicio-extra-price">¿Tu sitio necesita crecer? Agrego secciones o páginas nuevas a tu sitio existente.</div>
+        <div class="servicio-extra-price"><strong>a cotizar</strong> — agrego secciones o páginas nuevas a tu sitio existente.</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- CONTACTO -->
+<!-- ════════════════════════════════ CONTACTO ════════════════════════════════ -->
 <section id="contacto" class="section-dark" aria-label="Contacto">
-  <div class="section-header">
-    <span class="section-num">05</span>
-    <h2 class="section-title">Hablemos</h2>
-    <span class="section-tag">Respondo en &lt;24 horas</span>
+  <div class="contacto-header">
+    <span class="contacto-num">05 /</span>
+    <h2 class="contacto-title">Hablemos</h2>
+    <span class="contacto-tag">RESPONDO EN &lt;24 HORAS</span>
   </div>
+
   <div class="contacto-grid">
     <div class="contacto-left reveal">
-      <h2 class="contacto-headline">
-        ¿Listo<br>para<br><span class="hl">crecer</span><br>en línea?
-      </h2>
+      <h3 class="contacto-headline">
+        ¿Listo<br>
+        <em class="contacto-serif">para</em><br>
+        <span class="contacto-accent"><em class="contacto-serif">crecer</em></span><br>
+        en línea?
+      </h3>
       <p class="contacto-desc">Tu sitio web es tu vendedor 24/7. Conversemos sobre tu proyecto sin compromisos. Te respondo el mismo día.</p>
       <div class="contacto-actions">
-        <a href="https://wa.me/50361673417?text=Hola%20Johan%2C%20vi%20tu%20portafolio%20y%20me%20interesa%20hablar%20sobre%20mi%20proyecto.%20%C2%BFTienes%20disponibilidad%3F" class="btn-wa" target="_blank" rel="noopener noreferrer">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        <a href="https://wa.me/50361673417?text=Hola%20Johan%2C%20vi%20tu%20portafolio%20y%20me%20interesa%20hablar%20sobre%20mi%20proyecto.%20%C2%BFTienes%20disponibilidad%3F"
+           class="btn-wa" target="_blank" rel="noopener noreferrer">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
           WhatsApp · +503 6167-3417
         </a>
         <a href="mailto:lpzjohann05@gmail.com" class="btn-email">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
           lpzjohann05@gmail.com
         </a>
       </div>
     </div>
+
     <div class="contacto-right reveal">
       <div class="info-box">
         <div class="info-label">Teléfono / WhatsApp</div>
@@ -548,9 +633,10 @@
         <div class="info-value">San Salvador, El Salvador</div>
       </div>
       <div class="guarantee-box">
-        <h3>Mi garantía</h3>
+        <div class="guarantee-title">Mi <em class="contacto-serif guarantee-serif">garantía</em></div>
         <p>Si el resultado no te convence en la primera revisión, seguimos ajustando sin costo adicional hasta que estés 100% satisfecho.</p>
       </div>
+      <div class="stamp stamp-contact" aria-hidden="true">Hecho<br>en SV</div>
     </div>
   </div>
 </section>
@@ -558,12 +644,11 @@
 </main>
 
 <footer>
-  <div class="footer-logo">JL</div>
+  <div class="footer-logo" aria-hidden="true">JL</div>
   <div class="footer-copy">© 2026 Johan López · Desarrollador de Software · El Salvador</div>
   <div class="footer-tag">Hecho con código limpio</div>
 </footer>
 
 <script src="js/main.js"></script>
-
 </body>
 </html>

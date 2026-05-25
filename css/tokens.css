@@ -1,31 +1,22 @@
 /* ════════════════════════════════════════
    tokens.css — Variables de diseño + reset + base
+   Brutalist Refined v2
    ════════════════════════════════════════ */
 
-/* ── Design tokens ── */
 :root {
-  /* Paleta Arcilla */
   --bg:      #f5e0d0;
-  --bg2:     #fdf5ef;
+  --card:    #fffaf4;
+  --ink:     #0a0a0a;
   --accent:  #d42b2b;
-  --black:   #111111;
-  --white:   #fdf5ef;
-  --gray:    #7a6a64;
+  --muted:   #6b5a4f;
+  --rule:    #0a0a0a;
+  --soft:    #eccfb8;
   --green:   #25D366;
 
-  /* Bordes */
-  --border:       3px solid #111111;
-  --border-thick: 4px solid #111111;
-  --border-xl:    5px solid #111111;
-
-  /* Sombras offset (neobrutalism) */
-  --shadow-sm: 3px 3px 0 #111111;
-  --shadow:    5px 5px 0 #111111;
-  --shadow-lg: 8px 8px 0 #111111;
-
-  /* Tipografía */
-  --font-display: 'Bebas Neue', 'Arial Black', sans-serif;
-  --font-body:    'Space Grotesk', 'Segoe UI', sans-serif;
+  --font-display: 'Boldonse', 'Bebas Neue', Impact, sans-serif;
+  --font-serif:   'Instrument Serif', 'Fraunces', Georgia, serif;
+  --font-body:    'Inter Tight', system-ui, sans-serif;
+  --font-mono:    'JetBrains Mono', monospace;
 }
 
 /* ── Reset ── */
@@ -43,7 +34,7 @@ body {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.06'/%3E%3C/svg%3E");
   background-repeat: repeat;
   background-size: 300px 300px;
-  color: var(--black);
+  color: var(--ink);
   overflow-x: hidden;
   line-height: 1.5;
 }
@@ -52,21 +43,20 @@ img { display: block; max-width: 100%; }
 a   { color: inherit; text-decoration: none; }
 ul  { list-style: none; }
 
-/* ── Skip link (accesibilidad) ── */
+/* ── Skip link ── */
 .skip-link {
   position: absolute;
   top: -100px;
   left: 0;
   background: var(--accent);
-  color: var(--black);
-  font-family: var(--font-body);
+  color: #fff;
+  font-family: var(--font-mono);
   font-weight: 700;
-  font-size: 13px;
+  font-size: 12px;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 0.08em;
   padding: 10px 18px;
-  border: var(--border);
-  box-shadow: var(--shadow-sm);
+  border: 1.5px solid var(--ink);
   z-index: 9999;
   transition: top 0.2s;
 }
