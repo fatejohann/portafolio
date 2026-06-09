@@ -38,12 +38,13 @@ nav {
   letter-spacing: 0.02em;
 }
 .nav-logo-name {
-  font-weight: 600;
-  font-size: 14px;
+  font-weight: 700;
+  font-size: 18px;
   line-height: 1.1;
+  letter-spacing: -0.01em;
 }
 .nav-logo-sub {
-  font-size: 11px;
+  font-size: 12px;
   color: var(--muted);
   font-family: var(--font-mono);
 }
@@ -126,13 +127,6 @@ nav {
   margin-bottom: 40px;
   padding-bottom: 16px;
   border-bottom: 1.5px solid var(--rule);
-}
-.section-num {
-  font-family: var(--font-mono);
-  font-size: 12px;
-  color: var(--muted);
-  white-space: nowrap;
-  flex-shrink: 0;
 }
 .section-title {
   font-family: var(--font-display);
@@ -326,11 +320,17 @@ footer {
 .reveal {
   opacity: 0;
   transform: translateY(24px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
+  transition: opacity 0.5s cubic-bezier(0.22, 1, 0.36, 1), transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
 }
 .reveal.visible {
   opacity: 1;
   transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track    { animation: none; }
+  .hero-badge-dot   { animation: none; }
+  .reveal           { transition: none; opacity: 1; transform: none; }
 }
 
 /* ════════════════════════════════

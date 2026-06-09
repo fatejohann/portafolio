@@ -15,7 +15,6 @@
     gap: 48px;
     padding: 56px 32px 48px;
   }
-  .hero-meta { display: none; }
   .hero-visual { margin-top: 0; }
   .stamp { display: none; }
 
@@ -97,7 +96,17 @@
 
   .servicios-grid  { grid-template-columns: 1fr; }
   .servicios-extra { grid-template-columns: 1fr; gap: 24px; }
-  .stamp-services  { display: none; }
+  .servicios-wrap  { padding-top: 0; }
+  .stamp-services  {
+    position: static;
+    display: block;
+    width: fit-content;
+    margin: 0 auto 28px;
+    transform: rotate(-3deg);
+    font-size: 14px;
+    padding: 16px 22px;
+    min-width: 150px;
+  }
 
   .contacto-grid     { grid-template-columns: 1fr; gap: 32px; }
   .contacto-headline { font-size: clamp(3rem, 10vw, 5rem); }
@@ -108,6 +117,9 @@
 @media (max-width: 480px) {
   .hero-title { font-size: clamp(3.5rem, 14vw, 5rem); }
   .stat-block-num { font-size: clamp(3rem, 10vw, 4.5rem); }
+  .stat-block-value { flex-wrap: wrap; }
+  .stat-block-sub-side { margin-left: 0; text-align: left; flex-basis: 100%; }
+  .stat-block-sub-side br { display: none; }
   .project-featured-info { padding: 24px; }
   .project-row { grid-template-columns: 1fr auto; }
   .project-row-num { display: none; }

@@ -4,14 +4,15 @@
    ════════════════════════════════════════ */
 
 :root {
-  --bg:      #f5e0d0;
-  --card:    #fffaf4;
-  --ink:     #0a0a0a;
-  --accent:  #d42b2b;
-  --muted:   #6b5a4f;
-  --rule:    #0a0a0a;
-  --soft:    #eccfb8;
-  --green:   #25D366;
+  --bg:          #f5e0d0;
+  --card:        #fffaf4;
+  --ink:         #0a0a0a;
+  --accent:      #d42b2b;
+  --accent-text: #c02020; /* darkened for WCAG AA on --bg at small sizes */
+  --muted:       #6b5a4f;
+  --rule:        #0a0a0a;
+  --soft:        #eccfb8;
+  --green:       #25D366;
 
   --font-display: 'Boldonse', 'Bebas Neue', Impact, sans-serif;
   --font-serif:   'Instrument Serif', 'Fraunces', Georgia, serif;
@@ -27,6 +28,11 @@
 }
 
 html { scroll-behavior: smooth; }
+
+:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 3px;
+}
 
 body {
   font-family: var(--font-body);
